@@ -1,9 +1,18 @@
 exports.config = {
     framework: 'jasmine',
-    seleniumAddress: 'http://localhost:4444/wd/hub',
+    //'seleniumAddress': 'http://hub-cloud.browserstack.com/wd/hub',
+    //'chromeDriver': 'C:\Program Files (x86)\chromedriver_win32',
     specs: ['tests/e2eTestsSpec.js'],
     capabilities: {
-        browserName: 'firefox'
+        //'os': 'Windows',
+        //'os_version': '7',
+        //'browserName': 'IE',
+        'browserName': 'firefox',
+        "loggingPrefs": { "browser": "ALL" },
+        //'browser_version': '11.0',
+        //'resolution': '1024x768', 
+        //'browserstack.ie.enablePopups': true,
+        //'browserstack.safari.enablePopups': true
     },
-    directConnect: true
+    //directConnect: true
 }
